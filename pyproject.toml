@@ -1,0 +1,14 @@
+[project]
+name = "pokemon-iyasi1on1"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "select766", email = "select766@outlook.jp" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
