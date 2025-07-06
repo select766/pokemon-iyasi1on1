@@ -7,8 +7,18 @@ authors = [
     { name = "select766", email = "select766@outlook.jp" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "matplotlib>=3.10.3",
+    "matplotlib-fontja>=1.1.0",
+    "nashpy>=0.0.41",
+    "tqdm>=4.67.1",
+]
 
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "jupyterlab>=4.4.4",
+]
