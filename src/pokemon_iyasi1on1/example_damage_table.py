@@ -2,27 +2,17 @@
 自分のポケモンを固定して、相手のポケモンとその型によるダメージ予測テーブルを生成
 """
 
-"""
-いくつかのケースでバトルのシミュレーションを行う
-モンテカルロ版と有限マルコフ連鎖版の比較用
-"""
-
 import csv
-import random
 import sys
 
 from pokemon_iyasi1on1.damage import calc_damage, calc_status, optimize_hb
 from pokemon_iyasi1on1.db import get_species_by_name
-from pokemon_iyasi1on1.model import NatureTarget, Poke, PokeBreeding, PokeStrategy
+from pokemon_iyasi1on1.model import NatureTarget, PokeBreeding, PokeStrategy
 from pokemon_iyasi1on1.regulation import (
     EV_MAX,
-    EV_MIN,
-    EV_TOTAL,
     IV_MAX,
-    IV_MIN,
     POKE_LEVEL,
 )
-from pokemon_iyasi1on1.simulate_battle import simulate
 
 
 def main():
