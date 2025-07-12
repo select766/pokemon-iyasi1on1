@@ -2,6 +2,8 @@
 
 参加者の一人として、シミュレーションを用いた最適なパーティ構築を検討した際のコードです。
 
+検討結果のブログ https://select766.hatenablog.com/entry/2025/07/12/230137
+
 大会運営の記事 https://tetspond.hatenablog.com/entry/2025/06/29/135840
 
 # 環境構築
