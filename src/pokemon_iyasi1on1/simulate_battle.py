@@ -50,8 +50,8 @@ def simulate(pokes: tuple[Poke, Poke], rng: random.Random) -> int:
                 if defender.current_hp == 0:
                     return attacker_idx
 
-                # 反動
-                recoil = attacker.max_hp // 4
+                # 反動(四捨五入)
+                recoil = (attacker.max_hp + 2) // 4
                 attacker.current_hp = max(0, attacker.current_hp - recoil)
 
                 if attacker.current_hp == 0:
